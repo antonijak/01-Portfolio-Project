@@ -25,7 +25,6 @@ a {
 }
 
 h1 {
-    color: #4CAF50;
     font-size: 2.5em;
 }
 
@@ -133,6 +132,10 @@ summary {
     padding-bottom: .5rem;
 }
 
+#video {
+    display: flex;
+    justify-content: center;
+}
 
 iframe {
     max-width: 100%;
