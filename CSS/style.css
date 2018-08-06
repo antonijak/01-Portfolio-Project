@@ -8,6 +8,7 @@ body {
     line-height: 1.5;
     margin: auto;
     max-width: 1000px;
+    font-size: 1.1em;
 
 } 
 
@@ -23,11 +24,17 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+}
+
+
 /* MAIN */
 
 .content {
     background-color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     overflow: auto;
     border-radius: 20px;
@@ -38,8 +45,11 @@ main {
     overflow: auto;
 }
 
-main h2 {
-    text-align: center;
+main h3 {
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 0;
 }
 
 /* HEADER */
@@ -50,7 +60,6 @@ main h2 {
 } */
 
 header, footer {
-    position: sticky;
     overflow: auto;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -58,27 +67,13 @@ header, footer {
 
 }
 /* NAVIGATION */
-.mainNav{
-    margin: 0 5% 3%;
-}
-
-.mainNav a {
-    display: inline-block;
-    width: 15%;
-    background-color: white;
-    border-radius: 5px;
-    padding: .5rem 0;
-    margin: 2%;
-    text-align: center;
-}
-
 #top {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-flow: row wrap;
     align-items: center;
     margin: 5% 5% 3%;
-
     padding: 1.7rem;
    
 }
@@ -87,6 +82,23 @@ header, footer {
     border-radius: 20px;
     height: 113px;
     
+}
+.mainNav{
+    margin: 0 5% 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.mainNav a {
+    width: 8rem;
+    height: max-content;
+    background-color:#4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: .5rem 0;
+    margin: 2% 0;
+    text-align: center;
 }
 
 #home {
@@ -99,7 +111,7 @@ header, footer {
 
 /* LANDING PAGE CONTENT */
 
-section {
+section, fieldset {
     background-color: #f2f2f2;
     border-radius: 20px;
     border: none;
@@ -107,9 +119,15 @@ section {
     padding: 5%;
 }
 
-section h3 {
+section h2 {
    margin: 0 0 5% 0;
+   color: #4CAF50;
+   font-weight: bold;
 }
+
+details summary::-webkit-details-marker {
+    color:  #4CAF50;
+  }
 
 summary {
     padding-bottom: .5rem;
@@ -119,6 +137,92 @@ summary {
 iframe {
     max-width: 100%;
 }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    /* overflow: auto; */
+    padding: 10px;
+    border-radius: 0%;
+    text-align: left;
+    margin: 0;
+
+}
+
+#namediv, #emaildiv, button {
+    padding-bottom: 10px;
+}
+
+#namediv, #emaildiv {
+    height: 3rem;
+    font-size: 1.1em;
+}
+
+.inputField input {
+    border-radius: 20px;
+    line-height: 1.7rem;
+    width: 40%;
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+}
+
+.inputField input[type=text] {
+    
+    padding: 0 20px;
+   
+}
+.inputField input[type=email] {
+    
+    padding: 0 20px;
+   
+}
+#messagediv {
+    display: flex;
+   
+}
+
+#message {
+    border-radius: 20px;
+    line-height: 1.7rem;
+    width: 40%;
+    font-size: 1em;
+    color: gray;
+    outline: none;
+    padding: 0 20px;
+    border: none;
+    resize: none;
+    margin-left: 0.5em;
+}
+
+
+
+/* #messagediv {
+    padding-bottom: 0%;
+}
+
+#messagediv input[type=text] {
+    -transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#messagediv input[type=text]:focus {
+    width: 80%;
+} */
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 4%;
+}
+
 
 /* FOOTER */
 footer {
