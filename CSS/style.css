@@ -110,7 +110,7 @@ header, footer {
 
 /* LANDING PAGE CONTENT */
 
-section, fieldset {
+section, form {
     background-color: #f2f2f2;
     border-radius: 20px;
     border: none;
@@ -144,7 +144,6 @@ iframe {
 #contact {
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
     padding: 10px;
     border-radius: 0%;
     text-align: left;
@@ -181,14 +180,13 @@ iframe {
    
 }
 #messagediv {
-    display: flex;
-   
+    display: flex;   
 }
 
 #message {
     border-radius: 20px;
     line-height: 1.7rem;
-    width: 40%;
+    /* width: 40%; */
     font-size: 1em;
     color: gray;
     outline: none;
@@ -197,21 +195,6 @@ iframe {
     resize: none;
     margin-left: 0.5em;
 }
-
-
-
-/* #messagediv {
-    padding-bottom: 0%;
-}
-
-#messagediv input[type=text] {
-    -transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-#messagediv input[type=text]:focus {
-    width: 80%;
-} */
 
 button {
     background-color: #4CAF50;
@@ -246,6 +229,55 @@ footer {
     margin-right: .5rem;
 }
 
+/* MEDIA QUERIES */
+
+
+@media (max-width: 600px){
+    body {
+        font-size: 0.8em;
+    }
+
+   #top {
+       padding-top: 1%;
+   }
+
+    #top h1{
+        order: -1;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .mainNav {
+        justify-content: space-around;
+        margin-bottom: 5%;
+    }
+
+    /* CONTACT */
+
+    .inputField input {
+        display: block;
+        width: 100%;
+    }
+    
+    button {
+        padding: 15px 32px;
+        margin: auto;
+    }
+
+    #message textarea {
+        display: block;
+    }
+
+    #messagediv {
+        display: block;
+    }
+
+    #messagediv textarea {
+        width: 100%;
+        margin: 0%;
+    }
+
+}
 
 
 
